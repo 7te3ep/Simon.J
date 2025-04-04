@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dracula">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Moderne</title>
+    <link rel="stylesheet" href="css/output.css">
+</head>
+<body class="bg-base-200 p-4">
+    <div class="max-w-4xl mx-auto bg-base-100 shadow-xl rounded-xl p-6">
+        <div class="flex flex-col md:flex-row items-center md:items-start">
+            <img class="w-32 h-32 rounded-full border-4 border-primary" src="./assets/capybara.jpg" alt="Photo de profil">
+            <div class="ml-4 mt-4 md:mt-0">
+                <h1 class="text-3xl font-bold text-primary">Marc Dupond</h1>
+                <p class="text-secondary">Développeur Web | Spécialiste Specialisé</p>
+                <p class="text-accent">email@example.com | +33 6 12 34 56 78</p>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div>
+            <h2 class="text-xl font-semibold text-primary">À Propos</h2>
+            <p class="text-secondary mt-2">Passionné de simulation d'ecosyteme, j'en concois avec canvajs. J'aime aussi le developement web et suis capable de developper et deployer une app web fullstack rapidement</p>
+        </div>
+
+        <div class="divider"></div>
+
+        <div>
+            <h2 class="text-xl font-semibold text-primary">Expérience Professionnelle</h2>
+            <div class="mt-2 space-y-4">
+                <div class="bg-base-200 p-4 rounded-lg">
+                    <h3 class="font-bold text-secondary">Développeur Web - Thales</h3>
+                    <p class="text-sm text-accent">2022 - Présent</p>
+                    <p class="text-gray-600">Développement et maintenance d’applications web modernes.</p>
+                </div>
+                <div class="bg-base-200 p-4 rounded-lg">
+                    <h3 class="font-bold text-secondary">Intégrateur Web - Safran</h3>
+                    <p class="text-sm text-accent">2020 - 2022</p>
+                    <p class="text-gray-600">Création d'interfaces utilisateurs en respectant les bonnes pratiques UX/UI.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div>
+            <h2 class="text-xl font-semibold text-primary">Compétences</h2>
+            <div class="flex flex-wrap gap-2 mt-2">
+                <span class="badge badge-primary">Bash</span>
+                <span class="badge badge-secondary">MangoDb</span>
+                <span class="badge badge-accent">JavaScript</span>
+                <span class="badge badge-success">Svelt</span>
+                <span class="badge badge-warning">Vuejs</span>
+                <span class="badge badge-error">Node.js</span>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div>
+            <h2 class="text-xl font-semibold text-primary">Formation</h2>
+            <div class="mt-2">
+                <p class="font-bold text-secondary">Bachelor d'expert en expertise - Université des experts</p>
+                <p class="text-sm text-accent">Naissance - Present</p>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div>
+            <h2 class="text-xl font-semibold text-primary">Autres</h2>
+            <div class="flex flex-col md:flex-row items-center gap-4 mt-4">
+                <a href="contact.html" class="btn btn-secondary">Me contacter</a>
+                <button onclick="bruteforce()" class="btn btn-secondary">Bruteforce</button>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div>
+            <h2 class="text-xl font-semibold text-primary">Calculatrice</h2>
+            <div class="bg-base-200 p-4 rounded-lg w-64 mx-auto">
+                <input id="calc-screen" type="text" class="input input-bordered w-full text-right mb-2" readonly>
+                <div class="grid grid-cols-4 gap-2">
+                    <button class="btn btn-primary" onclick="addToScreen('7')">7</button>
+                    <button class="btn btn-primary" onclick="addToScreen('8')">8</button>
+                    <button class="btn btn-primary" onclick="addToScreen('9')">9</button>
+                    <button class="btn btn-accent" onclick="addToScreen('+')">+</button>
+                    <button class="btn btn-primary" onclick="addToScreen('4')">4</button>
+                    <button class="btn btn-primary" onclick="addToScreen('5')">5</button>
+                    <button class="btn btn-primary" onclick="addToScreen('6')">6</button>
+                    <button class="btn btn-accent" onclick="addToScreen('-')">-</button>
+                    <button class="btn btn-primary" onclick="addToScreen('1')">1</button>
+                    <button class="btn btn-primary" onclick="addToScreen('2')">2</button>
+                    <button class="btn btn-primary" onclick="addToScreen('3')">3</button>
+                    <button class="btn btn-error" onclick="clearScreen()">C</button>
+                    <button class="btn btn-primary col-span-2" onclick="addToScreen('0')">0</button>
+                    <button class="btn btn-success col-span-2" onclick="calculate()">=</button>
+                </div>
+            </input>
+        </div>
+    </div>
+    <script src="./scripts/calculatrice.js"></script>
+    <script src="./scripts/bruteforce.js"></script>
+</body>
+</html>

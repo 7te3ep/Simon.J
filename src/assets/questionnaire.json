@@ -1,0 +1,16 @@
+{
+    "questions": [
+      {
+        "question": "Quel est le langage principal pour le développement web front-end ?",
+        "reponses": ["Python", "JavaScript", "C++", "PHP"]
+      },
+      {
+        "question": "Quelle est la capitale de la France ?",
+        "reponses": ["Berlin", "Madrid", "Paris", "Rome"]
+      },
+      {
+        "question": "Combien font 5 + 3 ?",
+        "reponses": ["5", "8", "10", "15"]
+      }
+    ]
+  }
