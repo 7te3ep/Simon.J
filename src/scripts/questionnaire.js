@@ -33,4 +33,7 @@ function afficherQuestion(questionnaire,currentQuestion,reponseStr){
     })
 }
 
-init()
+
+document.addEventListener("DOMContentLoaded", (event) => {
+    init()
+});
