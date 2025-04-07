@@ -1004,11 +1004,20 @@
       }
     }
   }
+  .absolute {
+    position: absolute;
+  }
   .sticky {
     position: sticky;
   }
   .top-0 {
     top: calc(var(--spacing) * 0);
+  }
+  .-bottom-0 {
+    bottom: calc(var(--spacing) * -0);
+  }
+  .bottom-0 {
+    bottom: calc(var(--spacing) * 0);
   }
   .textarea {
     border: var(--border) solid #0000;
@@ -1290,6 +1299,9 @@
   }
   .w-64 {
     width: calc(var(--spacing) * 64);
+  }
+  .w-90 {
+    width: calc(var(--spacing) * 90);
   }
   .w-full {
     width: 100%;
