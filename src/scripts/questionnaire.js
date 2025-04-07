@@ -10,8 +10,12 @@ function afficherQuestion(questionnaire,currentQuestion,reponseStr){
 
     if (!question){
         // fin du quizz
-        document.getElementById('question').innerHTML = `Vous avez fini, allez a la page : <a class="link" href="./${reponseStr}.html">${reponseStr}.html</a>`
         document.getElementById('reponses').innerHTML = ""
+        if (reponseStr + ".html" != "R0_AJavaScript_R1_AParis_R2_A8_.html"){
+            document.getElementById('question').innerHTML = `Vous avez fini mais vous avez eu faux</a>`
+            return
+        }
+        document.getElementById('question').innerHTML = `Vous avez fini, allez a la page : <a class="link" href="./${reponseStr}.html">${reponseStr}.html</a>`
         return 
     }
 

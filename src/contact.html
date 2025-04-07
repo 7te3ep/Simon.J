@@ -6,7 +6,18 @@
     <title>Quizz et Contact</title>
     <link rel="stylesheet" href="css/output.css">
 </head>
-<body class="bg-base-200 p-4 h-screen">
+<body class="bg-base-200 p-4 pt-0 flex flex-col min-h-screen">
+
+    <nav class="navbar bg-neutral text-neutral-content sticky top-0 z-50 shadow-md mb-6 rounded-b-lg">
+        <div class="flex-1">
+            <a class="btn btn-ghost text-xl text-primary">Marc Dupond</a>
+        </div>
+        <div class="flex-none space-x-2">
+            <a href="index.html" class="btn btn-ghost text-neutral-content">Accueil</a>
+            <a href="contact.html" class="btn btn-ghost text-neutral-content">Contact</a>
+            <a href="contact.html" class="btn btn-ghost text-neutral-content">Quizz</a>
+        </div>
+    </nav>
     <div class="max-w-2xl mx-auto bg-base-100 shadow-xl rounded-xl p-6">
         <h2 class="text-xl font-semibold text-primary">Quizz</h2>
         <p id="question" class="mt-2">Quel langage est principalement utilisé pour le développement web front-end ?</p>
